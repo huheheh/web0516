@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <style></style>
+</head>
+<body>
+    <section>
+    <div class="box orange"></div>
+    <div class="box grey"></div>
+    <div class="box green"></div>
+    </section>
+    <script>
+        const aniduration = 3;
+        gasp.to(".box", {
+            duration: aniduration,
+            x: 100,
+            y: 100,
+            repeat: -1,
+            yoyo: true
+        })
+        gasp.to(".green", {
+            duration: aniduration,
+            rotation: 360,
+            repeat: -1,
+            yoyo: true
+        })
+    </script>
+</body>
+</html>
